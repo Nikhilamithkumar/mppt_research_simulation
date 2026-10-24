@@ -62,44 +62,9 @@ PV voltage setpoint:
 Run these commands from the directory containing this README. Python 3.10 or
 newer is recommended.
 
-### Windows PowerShell
-
-```powershell
-py -3 -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python validate_project.py
-python run_all.py
-python dynamic_converter_experiment.py
-```
-
-If PowerShell does not allow environment activation, use the environment's
-interpreter directly:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe validate_project.py
-.\.venv\Scripts\python.exe run_all.py
-.\.venv\Scripts\python.exe dynamic_converter_experiment.py
-```
-
-### macOS or Linux
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-python validate_project.py
-python run_all.py
-python dynamic_converter_experiment.py
-```
-
-`run_all.py` first runs `validate_project.py`, then runs the baseline and
-robustness experiments in `experiments.py`. The dynamic converter experiment
-is separate and must be run explicitly. The scripts write generated files to
-`outputs/`; they may overwrite files with the same names from a previous run.
+##Quick Start
+1. run python -m pip install -r requirements.txt
+   from the mppt_research_sim folder
 
 ## Experiments currently included
 
