@@ -1,0 +1,11 @@
+algorithm,parameter,value,tracking_efficiency_pct,last50_ripple_w
+P&O,step_v,0.2,96.41262286473774,0.03245142082141683
+P&O,step_v,0.5,98.52842039147968,0.2653933002974327
+P&O,step_v,0.7,98.92194120411176,0.37312951340356904
+P&O,step_v,1.0,99.18468564540386,1.1617784485483753
+P&O,step_v,2.0,99.3755109573613,3.4603944531498882
+Incremental Conductance,deadband_a_per_v,0.0,98.92194120411176,0.37312951340356904
+Incremental Conductance,deadband_a_per_v,0.001,98.92194120411176,0.37312951340356904
+Incremental Conductance,deadband_a_per_v,0.005,98.94777018951602,0.0
+Incremental Conductance,deadband_a_per_v,0.02,98.89997142690885,0.0
+Incremental Conductance,deadband_a_per_v,0.05,98.23372868553953,0.0

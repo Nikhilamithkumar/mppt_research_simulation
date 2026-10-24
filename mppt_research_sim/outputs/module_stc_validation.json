@@ -1,0 +1,12 @@
+{
+  "model_isc_a": 8.209632215525762,
+  "model_voc_v": 32.88341429169972,
+  "model_vmp_v": 26.348826413151134,
+  "model_imp_a": 7.595619984039367,
+  "model_pmp_w": 200.13567245971507,
+  "datasheet_isc_a": 8.21,
+  "datasheet_voc_v": 32.9,
+  "datasheet_vmp_v": 26.3,
+  "datasheet_imp_a": 7.61,
+  "datasheet_pmp_w": 200.0
+}

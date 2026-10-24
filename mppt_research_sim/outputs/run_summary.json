@@ -1,0 +1,118 @@
+{
+  "module": "Kyocera KC200GT",
+  "series_modules": 3,
+  "model_scope": "single-diode electrical model + three substring bypass clamps per module + ideal voltage-controlled interface",
+  "baseline_rows": [
+    {
+      "algorithm": "P&O",
+      "scenario": "irradiance_step",
+      "tracking_efficiency_pct": 99.48103390884458,
+      "steady_window_ripple_w": 0.4425843212571863,
+      "settling_after_step_samples": 0,
+      "final_power_mean_w": 356.80232011650577,
+      "final_mpp_mean_w": 356.93092973936047,
+      "global_peak_detected": true
+    },
+    {
+      "algorithm": "P&O",
+      "scenario": "partial_shading",
+      "tracking_efficiency_pct": 53.96684295235774,
+      "steady_window_ripple_w": 0.4483680277135704,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 207.46801448005328,
+      "final_mpp_mean_w": 384.3427690914557,
+      "global_peak_detected": false
+    },
+    {
+      "algorithm": "Incremental Conductance",
+      "scenario": "irradiance_step",
+      "tracking_efficiency_pct": 99.50021985044916,
+      "steady_window_ripple_w": 0.0,
+      "settling_after_step_samples": 0,
+      "final_power_mean_w": 356.8279142057884,
+      "final_mpp_mean_w": 356.93092973936047,
+      "global_peak_detected": true
+    },
+    {
+      "algorithm": "Incremental Conductance",
+      "scenario": "partial_shading",
+      "tracking_efficiency_pct": 53.956347593962526,
+      "steady_window_ripple_w": 0.0,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 207.42329389021762,
+      "final_mpp_mean_w": 384.3427690914557,
+      "global_peak_detected": false
+    },
+    {
+      "algorithm": "PSO",
+      "scenario": "irradiance_step",
+      "tracking_efficiency_pct": 96.45555543916176,
+      "steady_window_ripple_w": 0.0,
+      "settling_after_step_samples": 69,
+      "final_power_mean_w": 356.91038355337804,
+      "final_mpp_mean_w": 356.93092973936047,
+      "global_peak_detected": true
+    },
+    {
+      "algorithm": "PSO",
+      "scenario": "partial_shading",
+      "tracking_efficiency_pct": 97.05047682070932,
+      "steady_window_ripple_w": 0.0,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 384.33903211765005,
+      "final_mpp_mean_w": 384.3427690914557,
+      "global_peak_detected": true
+    },
+    {
+      "algorithm": "P&O",
+      "scenario": "one_substring_shaded",
+      "tracking_efficiency_pct": 42.049752639697076,
+      "steady_window_ripple_w": 1.510104996236663,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 222.25361989162164,
+      "final_mpp_mean_w": 528.3800346258759,
+      "global_peak_detected": false
+    },
+    {
+      "algorithm": "Incremental Conductance",
+      "scenario": "one_substring_shaded",
+      "tracking_efficiency_pct": 42.049752639697076,
+      "steady_window_ripple_w": 1.510104996236663,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 222.25361989162164,
+      "final_mpp_mean_w": 528.3800346258759,
+      "global_peak_detected": false
+    },
+    {
+      "algorithm": "PSO",
+      "scenario": "one_substring_shaded",
+      "tracking_efficiency_pct": 98.22332682177661,
+      "steady_window_ripple_w": 0.0,
+      "settling_after_step_samples": -1,
+      "final_power_mean_w": 528.3737011961109,
+      "final_mpp_mean_w": 528.3800346258759,
+      "global_peak_detected": true
+    }
+  ],
+  "pso_30_seed_partial_shading": {
+    "seeds": 30,
+    "global_peak_successes": 30,
+    "global_peak_success_rate_pct": 100.0,
+    "tracking_efficiency_mean_pct": 97.2964129207255,
+    "tracking_efficiency_sd_pct": 0.717623304109888
+  },
+  "module_stc_validation": {
+    "model_isc_a": 8.209632215525762,
+    "model_voc_v": 32.88341429169972,
+    "model_vmp_v": 26.348826413151134,
+    "model_imp_a": 7.595619984039367,
+    "model_pmp_w": 200.13567245971507,
+    "datasheet_isc_a": 8.21,
+    "datasheet_voc_v": 32.9,
+    "datasheet_vmp_v": 26.3,
+    "datasheet_imp_a": 7.61,
+    "datasheet_pmp_w": 200.0
+  },
+  "run_seconds": 17.264681577682495,
+  "note": "The baseline algorithms use an ideal voltage-actuation interface; this is not a switching-level or averaged-converter simulation."
+}
